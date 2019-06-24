@@ -25,9 +25,35 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+header .header-nav {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+header .header-nav .logo {
+  margin-right: 47%;
+}
+header .header-nav .nav-a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  align-self: center;
+}
+header .header-nav .nav-a:visited:not(:last-child) {
+  color: #42a5f6;
+}
+header .header-nav .sign {
+  background: #42a5f6;
+  padding: 0.5rem 2.5rem;
+  border-radius: 1.3rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 html,
 body,
