@@ -25,22 +25,22 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
 header .header-nav {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   display: flex;
   justify-content: flex-end;
   margin-top: 1rem;
 }
 header .header-nav .logo {
-  margin-right: 47%;
+  margin: 0 auto 0 0;
 }
 header .header-nav .nav-a {
   text-decoration: none;
-  margin: 0 0.5rem;
+  margin-right: 2rem;
   align-self: center;
 }
 header .header-nav .nav-a:visited:not(:last-child) {
@@ -178,4 +178,154 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+.top {
+  background: linear-gradient(90deg, #42a5f6 60%, #fff 60%);
+  width: 100%;
+  height: 52rem;
+  margin-top: 1.2rem;
+  display: flex;
+  position: relative;
+}
+.top .top-container {
+  width: 35rem;
+  margin-left: 6rem;
+  margin-top: 14rem;
+  height: 15rem;
+}
+.top .top-container .top-img {
+  margin-bottom: 2.5rem;
+}
+.top .top-container .top-p {
+  font-size: 1.8rem;
+  color: #ededed;
+  margin-bottom: 1rem;
+}
+.top .top-container .top-btn {
+  background: #ffffff;
+  padding: 0.5rem 2rem;
+  border-radius: 1.3rem;
+  color: #59717d;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-top: 2rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.top .top-container .dot-1 {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  height: 1rem;
+  width: 1rem;
+  background-color: #ededed;
+  border-radius: 50%;
+  display: inline-block;
+}
+.top .top-container .dot-2 {
+  position: absolute;
+  top: 6rem;
+  left: 10rem;
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: #ededed;
+  border-radius: 50%;
+  display: inline-block;
+}
+.top .top-container .dot-3 {
+  position: absolute;
+  top: 35rem;
+  left: 41rem;
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: #ededed;
+  border-radius: 50%;
+  display: inline-block;
+}
+.top .top-container .dot-4 {
+  position: absolute;
+  top: 44rem;
+  left: 16rem;
+  height: 1rem;
+  width: 1rem;
+  background-color: #ededed;
+  border-radius: 50%;
+  display: inline-block;
+}
+.top .top-container .dot-5 {
+  position: absolute;
+  top: 45rem;
+  left: 24rem;
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: #ededed;
+  border-radius: 50%;
+  display: inline-block;
+}
+.top .top-container .square-1 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 4.5rem;
+  left: 37rem;
+  background: #ededed;
+  opacity: 0.9;
+  border-radius: 0.3rem;
+  transform: rotate(150deg);
+}
+.top .top-container .square-2 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 5rem;
+  left: 38rem;
+  background: transparent;
+  border: 0.2rem solid #ededed;
+  border-radius: 0.3rem;
+  transform: rotate(150deg);
+}
+.top .top-container .square-3 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 5rem;
+  left: 38rem;
+  background: transparent;
+  border: 0.2rem solid #ededed;
+  border-radius: 0.3rem;
+  transform: rotate(150deg);
+}
+.top .top-container .square-4 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 5rem;
+  left: 38rem;
+  background: transparent;
+  border: 0.2rem solid #ededed;
+  border-radius: 0.3rem;
+  transform: rotate(150deg);
+}
+.top .top-container .square-5 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 5rem;
+  left: 38rem;
+  background: transparent;
+  border: 0.2rem solid #ededed;
+  border-radius: 0.3rem;
+  transform: rotate(150deg);
+}
+.top .top-container .square-6 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 5rem;
+  left: 38rem;
+  background: transparent;
+  border: 0.2rem solid #ededed;
+  border-radius: 0.3rem;
+  transform: rotate(150deg);
 }
