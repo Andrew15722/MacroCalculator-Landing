@@ -187,21 +187,21 @@ table {
   display: flex;
   position: relative;
 }
-.top .top-container {
-  width: 35rem;
+.top .top-container-left {
+  width: auto;
   margin-left: 6rem;
   margin-top: 14rem;
-  height: 15rem;
+  height: auto;
 }
-.top .top-container .top-img {
+.top .top-container-left .top-img {
   margin-bottom: 2.5rem;
 }
-.top .top-container .top-p {
+.top .top-container-left .top-p {
   font-size: 1.8rem;
   color: #ededed;
   margin-bottom: 1rem;
 }
-.top .top-container .top-btn {
+.top .top-container-left .top-btn {
   background: #ffffff;
   padding: 0.5rem 2rem;
   border-radius: 1.3rem;
@@ -213,7 +213,7 @@ table {
   display: inline-block;
   text-decoration: none;
 }
-.top .top-container .dot-1 {
+.top .top-container-left .dot-1 {
   position: absolute;
   top: 5rem;
   left: 2rem;
@@ -223,7 +223,7 @@ table {
   border-radius: 50%;
   display: inline-block;
 }
-.top .top-container .dot-2 {
+.top .top-container-left .dot-2 {
   position: absolute;
   top: 6rem;
   left: 10rem;
@@ -233,7 +233,7 @@ table {
   border-radius: 50%;
   display: inline-block;
 }
-.top .top-container .dot-3 {
+.top .top-container-left .dot-3 {
   position: absolute;
   top: 35rem;
   left: 41rem;
@@ -243,7 +243,7 @@ table {
   border-radius: 50%;
   display: inline-block;
 }
-.top .top-container .dot-4 {
+.top .top-container-left .dot-4 {
   position: absolute;
   top: 44rem;
   left: 16rem;
@@ -253,7 +253,7 @@ table {
   border-radius: 50%;
   display: inline-block;
 }
-.top .top-container .dot-5 {
+.top .top-container-left .dot-5 {
   position: absolute;
   top: 45rem;
   left: 24rem;
@@ -263,7 +263,7 @@ table {
   border-radius: 50%;
   display: inline-block;
 }
-.top .top-container .square-1 {
+.top .top-container-left .square-1 {
   width: 1.7rem;
   height: 1.7rem;
   position: absolute;
@@ -274,7 +274,7 @@ table {
   border-radius: 0.3rem;
   transform: rotate(150deg);
 }
-.top .top-container .square-2 {
+.top .top-container-left .square-2 {
   width: 1.7rem;
   height: 1.7rem;
   position: absolute;
@@ -285,7 +285,7 @@ table {
   border-radius: 0.3rem;
   transform: rotate(150deg);
 }
-.top .top-container .square-3 {
+.top .top-container-left .square-3 {
   width: 1rem;
   height: 1rem;
   position: absolute;
@@ -296,7 +296,7 @@ table {
   border-radius: 0.2rem;
   transform: rotate(123deg);
 }
-.top .top-container .square-4 {
+.top .top-container-left .square-4 {
   width: 1.7rem;
   height: 1.7rem;
   position: absolute;
@@ -307,7 +307,7 @@ table {
   border-radius: 0.3rem;
   transform: rotate(150deg);
 }
-.top .top-container .square-5 {
+.top .top-container-left .square-5 {
   width: 1.7rem;
   height: 1.7rem;
   position: absolute;
@@ -318,7 +318,7 @@ table {
   border-radius: 0.3rem;
   transform: rotate(150deg);
 }
-.top .top-container .square-6 {
+.top .top-container-left .square-6 {
   width: 1.7rem;
   height: 1.7rem;
   position: absolute;
@@ -328,4 +328,42 @@ table {
   border: 0.2rem solid #ededed;
   border-radius: 0.3rem;
   transform: rotate(150deg);
+}
+.top-container-right {
+  width: 100%;
+  height: auto;
+}
+.top-container-right .top-grid {
+  margin: 15rem 10rem 10rem 10rem;
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px 150px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  transform: rotate(50deg);
+}
+.top-container-right .top-grid .grid {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+  width: 10rem;
+}
+.top-container-right .top-grid .grid-1 {
+  background: orangered;
+}
+.top-container-right .top-grid .grid-2 {
+  background: yellowgreen;
+}
+.top-container-right .top-grid .grid-3 {
+  background: blueviolet;
+}
+.top-container-right .top-grid .grid-4 {
+  background: palevioletred;
+}
+.top-container-right .top-grid .grid-5 {
+  background: royalblue;
+}
+.top-container-right .top-grid .grid-6 {
+  background: goldenrod;
 }
