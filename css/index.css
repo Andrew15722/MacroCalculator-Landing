@@ -185,6 +185,9 @@ img {
   margin-right: 20px;
   color: #488DFB;
 }
+#landing nav .nav-links .mobile-ham {
+  display: none;
+}
 #landing nav .nav-links .sign-in-btn {
   color: white;
   background: #488DFB;
@@ -214,8 +217,40 @@ img {
   bottom: 0;
   right: 0;
 }
+#about {
+  margin: 100px;
+}
+#about .about-title h1 {
+  text-align: center;
+  color: #463F3F;
+}
+#about .about-title p {
+  max-width: 75%;
+  text-align: center;
+  margin: 50px auto;
+  color: #8F919B;
+  font-size: 24px;
+  font-weight: 300;
+}
 #about .icon-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2em;
+  grid-column-gap: 10em;
+}
+#about .icon-grid img {
+  display: block;
+  margin: 0 auto;
+}
+#about .icon-grid h1 {
+  color: #463F3F;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 38px;
+}
+#about .icon-grid p {
+  color: #8F919B;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 300;
 }

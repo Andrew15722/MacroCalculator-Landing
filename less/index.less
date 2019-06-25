@@ -27,6 +27,9 @@
                 margin-right: 20px;
                 color: @primary-color;
             }
+            .mobile-ham{
+                display: none;
+            }
             .sign-in-btn{
                 color: white;
                 background: @primary-color;
@@ -60,9 +63,41 @@
     }
 }
 #about{
+    margin: 100px;
+    .about-title{
+        h1{
+            text-align: center;
+            color: @tertiary-color
+        }
+        p{
+            max-width: 75%;
+            text-align: center;
+            margin: 50px auto;
+            color: @quaternary-color;
+            font-size: 24px;
+            font-weight: 300;
+        }
+    }
     .icon-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 2em;
+        grid-column-gap: 10em;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        h1{
+            color: @tertiary-color;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 38px;
+        }
+        p{
+            color: @quaternary-color;
+            text-align: center;
+            margin-top: 35px;
+            font-size: 20px;
+            font-weight: 300;
+        }
     }
 }
