@@ -2,46 +2,58 @@
 	width: 100%;
 	height: auto;
 
-	.top-grid {
-		margin: 15rem 10rem 10rem 10rem;
-		display: grid;
-		grid-template-rows: 150px 150px;
-		grid-template-columns: 150px 150px 150px;
+	.iphone-top {
+		height: 20rem;
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		top: 14rem;
+		left: 25rem;
+		transform: rotate(45deg);
 
-		grid-row-gap: 30px;
-		grid-column-gap: 30px;
-		transform: rotate(50deg);
-
-		.grid {
+		.iphone {
+			width: 12.5rem;
+			height: 26rem;
 			padding: 20px;
+			margin: .6rem;
 			font-size: 30px;
 			font-family: sans-serif;
 			color: white;
-			width: 10rem;
+			box-shadow: .2rem .2rem 1rem black;
+			border-radius: 20px;
 		}
 
-		.grid-1 {
-			background: orangered;
+		.iphone-1 {
+			background: white;
+			position: absolute;
 		}
 
-		.grid-2 {
-			background: yellowgreen;
+		.iphone-2 {
+			background-image: linear-gradient(to top, #b16dd2, #3963cf);
+			position: absolute;
+			top: 15rem;
+			left: 14rem;
 		}
 
-		.grid-3 {
-			background: blueviolet;
+		.iphone-3 {
+			background: white;
+			position: absolute;
+			top: 24rem;
+			left: 28rem;
 		}
 
-		.grid-4 {
-			background: palevioletred;
+		.iphone-4 {
+			background: white;
+			position: absolute;
 		}
 
-		.grid-5 {
-			background: royalblue;
+		.iphone-5 {
+			background: white;
+			position: absolute;
 		}
 
-		.grid-6 {
-			background: goldenrod;
+		.iphone-6 {
+			display: none;
 		}
 	}
 }
