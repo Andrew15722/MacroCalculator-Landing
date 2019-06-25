@@ -30,6 +30,7 @@ img {
   margin: 0 auto;
 }
 header .header-nav {
+  background: linear-gradient(90deg, #42a5f6 60%, #fff 60%);
   font-size: 1.6rem;
   display: flex;
   justify-content: flex-end;
@@ -183,7 +184,6 @@ table {
   background: linear-gradient(90deg, #42a5f6 60%, #fff 60%);
   width: 100%;
   height: 52rem;
-  margin-top: 1.2rem;
   display: flex;
   position: relative;
 }
@@ -264,8 +264,8 @@ table {
   display: inline-block;
 }
 .top .top-container .square-1 {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.7rem;
+  height: 1.7rem;
   position: absolute;
   top: 4.5rem;
   left: 37rem;
@@ -275,8 +275,8 @@ table {
   transform: rotate(150deg);
 }
 .top .top-container .square-2 {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.7rem;
+  height: 1.7rem;
   position: absolute;
   top: 5rem;
   left: 38rem;
@@ -286,44 +286,44 @@ table {
   transform: rotate(150deg);
 }
 .top .top-container .square-3 {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
-  top: 5rem;
-  left: 38rem;
+  top: 11rem;
+  left: 34rem;
   background: transparent;
-  border: 0.2rem solid #ededed;
-  border-radius: 0.3rem;
-  transform: rotate(150deg);
+  border: 0.1rem solid #ededed;
+  border-radius: 0.2rem;
+  transform: rotate(123deg);
 }
 .top .top-container .square-4 {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.7rem;
+  height: 1.7rem;
   position: absolute;
-  top: 5rem;
-  left: 38rem;
+  top: 16rem;
+  left: 34rem;
   background: transparent;
   border: 0.2rem solid #ededed;
   border-radius: 0.3rem;
   transform: rotate(150deg);
 }
 .top .top-container .square-5 {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.7rem;
+  height: 1.7rem;
   position: absolute;
-  top: 5rem;
-  left: 38rem;
+  top: 8.5rem;
+  left: 9rem;
   background: transparent;
   border: 0.2rem solid #ededed;
   border-radius: 0.3rem;
   transform: rotate(150deg);
 }
 .top .top-container .square-6 {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.7rem;
+  height: 1.7rem;
   position: absolute;
-  top: 5rem;
-  left: 38rem;
+  top: 47rem;
+  left: 23rem;
   background: transparent;
   border: 0.2rem solid #ededed;
   border-radius: 0.3rem;

@@ -41,26 +41,38 @@
 	display: inline-block;
 }
 
-.square() {
-	width: 1.8rem;
-	height: 1.8rem;
+.square-white(@top,@left) {
+	width: 1.7rem;
+	height: 1.7rem;
 	position: absolute;
-	top: 4.5rem;
-	left: 37rem;
+	top: @top;
+	left: @left;
 	background: #ededed;
 	opacity: .9;
 	border-radius: .3rem;
 	transform: rotate(150deg);
 }
 
-.square-clear() {
-	width: 1.8rem;
-	height: 1.8rem;
+.square-clear(@top,@left) {
+	width: 1.7rem;
+	height: 1.7rem;
 	position: absolute;
-	top: 5rem;
-	left: 38rem;
+	top: @top;
+	left: @left;
 	background: transparent;
 	border: .2rem solid #ededed;
 	border-radius: .3rem;
 	transform: rotate(150deg);
+}
+
+.square-clear-sm(@top,@left) {
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: @top;
+	left: @left;
+	background: transparent;
+	border: .1rem solid #ededed;
+	border-radius: .2rem;
+	transform: rotate(123deg);
 }
