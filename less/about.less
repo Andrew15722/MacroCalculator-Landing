@@ -1,4 +1,52 @@
 .about {
-	height: 50rem;
+	height: 43rem;
 	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	margin-top: 7rem;
+
+	.about-h1-img {
+		left: 28rem;
+		position: absolute;
+	}
+
+	.about-h1 {
+		font-size: 3.5rem;
+		text-align: center;
+	}
+
+	.about-p {
+		text-align: center;
+		margin-top: 2rem;
+		font-size: 1.5rem;
+		color: @color-about;
+	}
+
+	.col-container {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 8rem;
+
+		.about-col-1-of-3 {
+			text-align: center;
+			width: 25%;
+
+			.about-h2 {
+				font-size: 2rem;
+				margin-top: 2rem;
+			}
+
+			.about-col-p {
+				font-size: 1.3rem;
+				color: @color-about;
+				margin-top: 1.5rem;
+
+				strong {
+					font-weight: bold;
+				}
+			}
+		}
+	}
 }
