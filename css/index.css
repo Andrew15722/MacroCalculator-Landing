@@ -299,6 +299,7 @@ table {
   text-decoration: none;
   margin-right: 1.7rem;
   align-self: center;
+  color: #488dfb;
 }
 .landing .landing-nav .nav-a:visited:not(:last-child) {
   color: #488dfb;
