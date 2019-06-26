@@ -71,6 +71,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+#footer {
+  display: flex;
+  height: 5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer img {
+  width: 9%;
+  margin-right: 85rem;
+}
+#footer p {
+  margin-right: 5rem;
+  color: #bdbdbd;
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -201,7 +215,7 @@ table {
   border-spacing: 0;
 }
 .landing {
-  background: linear-gradient(90deg, #2b59ce 60%, #ededed 60%);
+  background: linear-gradient(90deg, #488dfb 60%, #ededed 60%);
   height: 100vh;
   font-family: 'Open Sans', sans-serif;
   position: relative;
@@ -222,10 +236,10 @@ table {
   align-self: center;
 }
 .landing .nav-a:visited:not(:last-child) {
-  color: #2b59ce;
+  color: #488dfb;
 }
 .landing .btn-sign {
-  background: #2b59ce;
+  background: #488dfb;
   padding: 0.5rem 2.5rem;
   border-radius: 1.3rem;
   color: #ededed;
@@ -266,7 +280,7 @@ table {
   height: 80%;
 }
 .team {
-  background: #2b59ce;
+  background: #488dfb;
   height: 60rem;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -274,6 +288,7 @@ table {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .team .team-meet {
   flex-basis: 100%;
