@@ -1,8 +1,15 @@
+.about {
+  height: 50rem;
+  width: 100%;
+}
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -25,39 +32,9 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-}
-header {
-  z-index: 99;
-}
-header .header-nav {
-  background: linear-gradient(90deg, #42a5f6 60%, #fff 60%);
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1rem;
-}
-header .header-nav .logo {
-  margin: 0 auto 0 0;
-}
-header .header-nav .nav-a {
-  text-decoration: none;
-  margin-right: 2rem;
-  align-self: center;
-}
-header .header-nav .nav-a:visited:not(:last-child) {
-  color: #42a5f6;
-}
-header .header-nav .sign {
-  background: #42a5f6;
-  padding: 0.5rem 2.5rem;
-  border-radius: 1.3rem;
-  color: #ffffff;
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
 }
 html,
 body,
@@ -183,203 +160,68 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.top {
-  background: linear-gradient(90deg, #42a5f6 60%, #fff 60%);
-  width: 100%;
-  height: 52rem;
-  display: flex;
+.landing {
+  background: linear-gradient(90deg, #2b59ce 60%, #ededed 60%);
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
 }
-.top .top-container-left {
-  width: auto;
-  margin-left: 6rem;
-  margin-top: 14rem;
-  height: auto;
+.landing .landing-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
+  font-size: 1.6rem;
 }
-.top .top-container-left .top-img {
-  margin-bottom: 2.5rem;
+.landing .logo {
+  margin: 4rem auto 4rem 8rem;
+  align-self: center;
 }
-.top .top-container-left .top-p {
-  font-size: 1.8rem;
+.landing .nav-a {
+  text-decoration: none;
+  margin-right: 1.7rem;
+  align-self: center;
+}
+.landing .nav-a:visited:not(:last-child) {
+  color: #2b59ce;
+}
+.landing .btn-sign {
+  background: #2b59ce;
+  padding: 0.5rem 2.5rem;
+  border-radius: 1.3rem;
   color: #ededed;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
-.top .top-container-left .top-btn {
-  background: #ffffff;
-  padding: 0.5rem 2rem;
+.landing .landing-mission {
+  width: 50rem;
+  height: 25rem;
+  margin: 5rem 0 0 8rem;
+}
+.landing .landing-mission .landing-logo {
+  margin-bottom: 2.8rem;
+}
+.landing .landing-mission .landing-p {
+  color: #ededed;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.landing .landing-mission .landing-btn {
+  background: #ededed;
+  padding: 0.4rem 1.8rem;
   border-radius: 1.3rem;
   color: #59717d;
   font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   margin-top: 2rem;
-  display: inline-block;
-  text-decoration: none;
+  margin-top: 2.5rem;
 }
-.top .top-container-left .dot-1 {
+.landing .iphone-img {
   position: absolute;
-  top: 5rem;
-  left: 2rem;
-  height: 1rem;
-  width: 1rem;
-  background-color: #ededed;
-  border-radius: 50%;
-  display: inline-block;
-}
-.top .top-container-left .dot-2 {
-  position: absolute;
-  top: 6rem;
-  left: 10rem;
-  height: 0.6rem;
-  width: 0.6rem;
-  background-color: #ededed;
-  border-radius: 50%;
-  display: inline-block;
-}
-.top .top-container-left .dot-3 {
-  position: absolute;
-  top: 35rem;
-  left: 41rem;
-  height: 0.6rem;
-  width: 0.6rem;
-  background-color: #ededed;
-  border-radius: 50%;
-  display: inline-block;
-}
-.top .top-container-left .dot-4 {
-  position: absolute;
-  top: 44rem;
-  left: 16rem;
-  height: 1rem;
-  width: 1rem;
-  background-color: #ededed;
-  border-radius: 50%;
-  display: inline-block;
-}
-.top .top-container-left .dot-5 {
-  position: absolute;
-  top: 45rem;
-  left: 24rem;
-  height: 0.6rem;
-  width: 0.6rem;
-  background-color: #ededed;
-  border-radius: 50%;
-  display: inline-block;
-}
-.top .top-container-left .square-1 {
-  width: 1.7rem;
-  height: 1.7rem;
-  position: absolute;
-  top: 4.5rem;
-  left: 37rem;
-  background: #ededed;
-  opacity: 0.9;
-  border-radius: 0.3rem;
-  transform: rotate(150deg);
-}
-.top .top-container-left .square-2 {
-  width: 1.7rem;
-  height: 1.7rem;
-  position: absolute;
-  top: 5rem;
-  left: 38rem;
-  background: transparent;
-  border: 0.2rem solid #ededed;
-  border-radius: 0.3rem;
-  transform: rotate(150deg);
-}
-.top .top-container-left .square-3 {
-  width: 1rem;
-  height: 1rem;
-  position: absolute;
-  top: 11rem;
-  left: 34rem;
-  background: transparent;
-  border: 0.1rem solid #ededed;
-  border-radius: 0.2rem;
-  transform: rotate(123deg);
-}
-.top .top-container-left .square-4 {
-  width: 1.7rem;
-  height: 1.7rem;
-  position: absolute;
-  top: 16rem;
-  left: 34rem;
-  background: transparent;
-  border: 0.2rem solid #ededed;
-  border-radius: 0.3rem;
-  transform: rotate(150deg);
-}
-.top .top-container-left .square-5 {
-  width: 1.7rem;
-  height: 1.7rem;
-  position: absolute;
-  top: 8.5rem;
-  left: 9rem;
-  background: transparent;
-  border: 0.2rem solid #ededed;
-  border-radius: 0.3rem;
-  transform: rotate(150deg);
-}
-.top .top-container-left .square-6 {
-  width: 1.7rem;
-  height: 1.7rem;
-  position: absolute;
-  top: 47rem;
-  left: 23rem;
-  background: transparent;
-  border: 0.2rem solid #ededed;
-  border-radius: 0.3rem;
-  transform: rotate(150deg);
-}
-.top-container-right {
-  width: 100%;
-  height: auto;
-}
-.top-container-right .iphone-top {
-  height: 20rem;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 14rem;
-  left: 25rem;
-  transform: rotate(45deg);
-}
-.top-container-right .iphone-top .iphone {
-  width: 12.5rem;
-  height: 26rem;
-  padding: 20px;
-  margin: 0.6rem;
-  font-size: 30px;
-  font-family: sans-serif;
-  color: white;
-  box-shadow: 0.2rem 0.2rem 1rem black;
-  border-radius: 20px;
-}
-.top-container-right .iphone-top .iphone-1 {
-  background: white;
-  position: absolute;
-}
-.top-container-right .iphone-top .iphone-2 {
-  background-image: linear-gradient(to top, #b16dd2, #3963cf);
-  position: absolute;
-  top: 15rem;
-  left: 14rem;
-}
-.top-container-right .iphone-top .iphone-3 {
-  background: white;
-  position: absolute;
-  top: 24rem;
-  left: 28rem;
-}
-.top-container-right .iphone-top .iphone-4 {
-  background: white;
-  position: absolute;
-}
-.top-container-right .iphone-top .iphone-5 {
-  background: white;
-  position: absolute;
-}
-.top-container-right .iphone-top .iphone-6 {
-  display: none;
+  bottom: 0;
+  right: 8rem;
+  width: 45%;
+  height: 80%;
 }

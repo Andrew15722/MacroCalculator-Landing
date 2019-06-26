@@ -1,0 +1,62 @@
+.landing {
+	background: linear-gradient(90deg, @color-primary 60%, @color-secondary 60%);
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+
+	.landing-nav {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 10rem;
+		font-size: 1.6rem;
+	}
+
+	.logo {
+		margin: 4rem auto 4rem 8rem;
+		align-self: center;
+	}
+
+	.nav-a {
+		text-decoration: none;
+		margin-right: 1.7rem;
+		align-self: center;
+	}
+
+	.nav-a:visited:not(:last-child) {
+		color: @color-primary;
+	}
+
+	.btn-sign {
+		.btn-blue();
+	}
+
+	.landing-mission {
+		width: 50rem;
+		height: 25rem;
+		margin: 5rem 0 0 8rem;
+
+		.landing-logo {
+			margin-bottom: 2.8rem;
+		}
+
+		.landing-p {
+			color: @color-secondary;
+			font-size: 1.8rem;
+			font-weight: 400;
+			line-height: 2rem;
+		}
+
+		.landing-btn {
+			.btn-white();
+			margin-top: 2.5rem;
+		}
+	}
+
+	.iphone-img {
+		position: absolute;
+		bottom: 0;
+		right: 8rem;
+		width: 45%;
+		height: 80%;
+	}
+}
