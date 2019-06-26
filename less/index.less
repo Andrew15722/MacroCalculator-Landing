@@ -11,24 +11,35 @@
     top: 0;
     left: 0;
     z-index: -1;
+    @media @tablet {
+        width: 100vw;
+    }
 }
 #landing{
     height: 100vh;
     position: relative;
+   
     nav{
         padding: 60px 5% 0 5%;
         display: grid;
         grid-template-columns: max-content 1fr;
         .nav-links{
             margin-left: auto;
+          
             a{
                 font-size: 22px;
                 font-weight: 400;
                 margin-right: 20px;
                 color: @primary-color;
+                @media @tablet {
+                    display: none;
+                }
             }
             .mobile-ham{
                 display: none;
+                @media @tablet {
+                    display: block;
+                }
             }
             .sign-in-btn{
                 color: white;
@@ -42,12 +53,28 @@
     .landing-content{
         width: 35%;
         margin: 150px 100px 100px 100px;
+        @media @tablet {
+            width: 80%;
+            margin: 100px auto;
+            
+        }
+        img{
+            @media @tablet {
+                display: block;
+            margin: 0 auto;
+           
+            }
+            
+        }
         h2{
             font-size: 28px;
             color: @secondary-color;
             margin-top: 2em;
             line-height: 1.3em;
             font-weight: 300;
+            @media @tablet {
+                text-align: center;
+            }
         }
         .preorder{
             margin-top: 50px;
@@ -60,10 +87,16 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        @media @tablet {
+            display: none;
+        }
     }
 }
 #about{
-    margin: 100px;
+    padding: 100px;
+    @media @mobile {
+        padding: 75px 25px;
+       }
     .section-title{
         h1{
             text-align: center;
@@ -109,6 +142,9 @@
 #team{
     background-color: @primary-color;
     padding: 100px;
+    @media @mobile {
+       padding: 75px 25px;
+      }
     .section-title{
         h1{
             text-align: center;
@@ -151,6 +187,10 @@
                 max-width: 300px;
 
               }
+              &:hover{
+                  transform: scale(1.1);
+                  cursor: pointer;
+              }
         }
         h3{
             color: white;
@@ -174,5 +214,30 @@ footer{
         padding: 20px;
         font-size: 1em;
         color: @quaternary-color;
+    }
+}
+.modal-header{
+    border: none;
+}
+.modal-body{
+    h1{
+        
+        text-align: center;
+        font-size: 24px;
+        color: @tertiary-color;
+        margin-top: 25px;
+    }
+    img{
+         max-width: 200px;
+            display: block;
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.16);
+            border: 4px solid @primary-color;
+    }
+    p{
+        color: @quaternary-color;
+        width: 80%;
+        margin: 25px auto;
     }
 }

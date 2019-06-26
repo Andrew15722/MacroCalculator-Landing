@@ -156,6 +156,11 @@ img {
   left: 0;
   z-index: -1;
 }
+@media (max-width: 850px) {
+  .color-wrap {
+    width: 100vw;
+  }
+}
 #landing {
   height: 100vh;
   position: relative;
@@ -174,8 +179,18 @@ img {
   margin-right: 20px;
   color: #488DFB;
 }
+@media (max-width: 850px) {
+  #landing nav .nav-links a {
+    display: none;
+  }
+}
 #landing nav .nav-links .mobile-ham {
   display: none;
+}
+@media (max-width: 850px) {
+  #landing nav .nav-links .mobile-ham {
+    display: block;
+  }
 }
 #landing nav .nav-links .sign-in-btn {
   color: white;
@@ -188,12 +203,29 @@ img {
   width: 35%;
   margin: 150px 100px 100px 100px;
 }
+@media (max-width: 850px) {
+  #landing .landing-content {
+    width: 80%;
+    margin: 100px auto;
+  }
+}
+@media (max-width: 850px) {
+  #landing .landing-content img {
+    display: block;
+    margin: 0 auto;
+  }
+}
 #landing .landing-content h2 {
   font-size: 28px;
   color: #FAF8F8;
   margin-top: 2em;
   line-height: 1.3em;
   font-weight: 300;
+}
+@media (max-width: 850px) {
+  #landing .landing-content h2 {
+    text-align: center;
+  }
 }
 #landing .landing-content .preorder {
   margin-top: 50px;
@@ -206,8 +238,18 @@ img {
   bottom: 0;
   right: 0;
 }
+@media (max-width: 850px) {
+  #landing .iphone {
+    display: none;
+  }
+}
 #about {
-  margin: 100px;
+  padding: 100px;
+}
+@media (max-width: 600px) {
+  #about {
+    padding: 75px 25px;
+  }
 }
 #about .section-title h1 {
   text-align: center;
@@ -253,6 +295,11 @@ img {
 #team {
   background-color: #488DFB;
   padding: 100px;
+}
+@media (max-width: 600px) {
+  #team {
+    padding: 75px 25px;
+  }
 }
 #team .section-title h1 {
   text-align: center;
@@ -301,6 +348,10 @@ img {
     max-width: 300px;
   }
 }
+#team .profiles-wrapper img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 #team .profiles-wrapper h3 {
   color: white;
   font-size: 25px;
@@ -320,4 +371,26 @@ footer span {
   padding: 20px;
   font-size: 1em;
   color: #8F919B;
+}
+.modal-header {
+  border: none;
+}
+.modal-body h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #463F3F;
+  margin-top: 25px;
+}
+.modal-body img {
+  max-width: 200px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+  border: 4px solid #488DFB;
+}
+.modal-body p {
+  color: #8F919B;
+  width: 80%;
+  margin: 25px auto;
 }

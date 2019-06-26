@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <title>Macrometer</title>
@@ -18,7 +19,7 @@
             <div class="nav-links">
                 <a href="">Home</a>
                 <a href="#about">About</a>
-                <a href="">Team</a>
+                <a href="#team">Team</a>
                 <a class="sign-in-btn" href="">Sign in</a>
                 <a class="mobile-ham"><img src="/images/ham.svg" alt=""></a>
             </div>
@@ -72,38 +73,149 @@
             </div>
             <div class="profiles-wrapper">
                 <div>
-                    <img src="/images/kat-avatar.png" alt="">
+                    <img data-toggle="modal" data-target="#katModal" src="/images/kat-avatar.png" alt="">
                     <h3>Kat Milton</h3>
                     <h4>iOS Developer</h4>
                 </div>
                 <div>
-                    <img src="/images/kat-avatar.png" alt="">
+                    <img data-toggle="modal" data-target="#luqModal" src="/images/luq-avatar.png" alt="">
                     <h3>Luqmaan Kahn</h3>
                     <h4>iOS Developer</h4>
                 </div>
                 <div>
-                    <img src="/images/kat-avatar.png" alt="">
+                    <img data-toggle="modal" data-target="#andrewModal" src="/images/andrew-avatar.png" alt="">
                     <h3>Andrew Mendez</h3>
                     <h4>UI Developer</h4>
                 </div>
                 <div>
-                    <img src="/images/kat-avatar.png" alt="">
+                    <img data-toggle="modal" data-target="#brandonModal" src="/images/brandon-avatar.png" alt="">
                     <h3>Brandon Desselle</h3>
                     <h4>Front End Developer</h4>
                 </div>
                 <div>
-                    <img src="/images/kat-avatar.png" alt="">
+                    <img data-toggle="modal" data-target="#krisliModal" src="/images/krisli-avatar.png" alt="">
                     <h3>Krisli Dimo</h3>
                     <h4>Back End Developer</h4>
                 </div>
                 <div>
-                    <img src="/images/kat-avatar.png" alt="">
+                    <img data-toggle="modal" data-target="#zachModal" src="/images/zach-avatar.png" alt="">
                     <h3>Zach Young</h3>
                     <h4>UI Designer/ Developer</h4>
                 </div>
             </div>
     </section>
     <footer><span>&copy; Macrometer 2019</span></footer>
-    
+    <!--Kat Modal Begin-->
+    <div class="modal fade" id="katModal" tabindex="-1" role="dialog" aria-labelledby="katModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/kat-avatar.png" alt="">
+                <h1>Kat Miton</h1>
+                <p>Kat Milton is an iOS developer. Having a background in the healthcare industry as a nursing assistant and massage therapist, health is of the utmost importance to her. Developing Macrometer has allowed her to let her skills in healthcare and development mesh to create a helpful tool for users to achieve their fitness goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Kat Modal End-->
+<!--Luq Modal Begin-->
+      <div class="modal fade" id="luqModal" tabindex="-1" role="dialog" aria-labelledby="luqModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/luq-avatar.png" alt="">
+                    <h1>Luqmaan Kahn</h1>
+                    <p>Luqmaan Kahn is an iOS developer. Having a background in the healthcare industry as a nursing assistant and massage therapist, health is of the utmost importance to her. Developing Macrometer has allowed her to let her skills in healthcare and development mesh to create a helpful tool for users to achieve their fitness goals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--Luq Modal End-->
+<!--Andrew Modal Begin-->
+<div class="modal fade" id="andrewModal" tabindex="-1" role="dialog" aria-labelledby="andrewModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/andrew-avatar.png" alt="">
+                <h1>Andrew Mendez</h1>
+                <p>Andrew Mendez is an iOS developer. Having a background in the healthcare industry as a nursing assistant and massage therapist, health is of the utmost importance to her. Developing Macrometer has allowed her to let her skills in healthcare and development mesh to create a helpful tool for users to achieve their fitness goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Andrew Modal End-->
+<!--Brandon Modal Begin-->
+<div class="modal fade" id="brandonModal" tabindex="-1" role="dialog" aria-labelledby="brandonModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/brandon-avatar.png" alt="">
+                <h1>Brandon Desselle</h1>
+                <p>Brandon Desselle is an iOS developer. Having a background in the healthcare industry as a nursing assistant and massage therapist, health is of the utmost importance to her. Developing Macrometer has allowed her to let her skills in healthcare and development mesh to create a helpful tool for users to achieve their fitness goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Brandon Modal End-->
+<!--Krisli Modal Begin-->
+<div class="modal fade" id="krisliModal" tabindex="-1" role="dialog" aria-labelledby="brandonModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/krisli-avatar.png" alt="">
+                <h1>Krisli Dimo</h1>
+                <p>Krisli Dimo is an iOS developer. Having a background in the healthcare industry as a nursing assistant and massage therapist, health is of the utmost importance to her. Developing Macrometer has allowed her to let her skills in healthcare and development mesh to create a helpful tool for users to achieve their fitness goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Krisli Modal End-->
+<!--Zach Modal Begin-->
+<div class="modal fade" id="zachModal" tabindex="-1" role="dialog" aria-labelledby="brandonModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="/images/zach-avatar.png" alt="">
+                <h1>Zach Young</h1>
+                <p>Zach Young is an iOS developer. Having a background in the healthcare industry as a nursing assistant and massage therapist, health is of the utmost importance to her. Developing Macrometer has allowed her to let her skills in healthcare and development mesh to create a helpful tool for users to achieve their fitness goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Zach Modal End-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
