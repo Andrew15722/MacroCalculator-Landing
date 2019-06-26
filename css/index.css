@@ -133,17 +133,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -220,11 +209,12 @@ img {
 #about {
   margin: 100px;
 }
-#about .about-title h1 {
+#about .section-title h1 {
   text-align: center;
   color: #463F3F;
+  font-size: 60px;
 }
-#about .about-title p {
+#about .section-title p {
   max-width: 75%;
   text-align: center;
   margin: 50px auto;
@@ -235,7 +225,13 @@ img {
 #about .icon-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 10em;
+  grid-column-gap: 5em;
+}
+@media (max-width: 850px) {
+  #about .icon-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
+  }
 }
 #about .icon-grid img {
   display: block;
@@ -253,4 +249,75 @@ img {
   margin-top: 35px;
   font-size: 20px;
   font-weight: 300;
+}
+#team {
+  background-color: #488DFB;
+  padding: 100px;
+}
+#team .section-title h1 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+#team .section-title p {
+  max-width: 75%;
+  text-align: center;
+  margin: 50px auto;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+#team .profiles-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: max-content max-content;
+  grid-column: 3em;
+  grid-row-gap: 5em;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 850px) {
+  #team .profiles-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content max-content;
+  }
+}
+@media (max-width: 600px) {
+  #team .profiles-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+#team .profiles-wrapper img {
+  max-width: 200px;
+  display: block;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+}
+@media (max-width: 600px) {
+  #team .profiles-wrapper img {
+    max-width: 300px;
+  }
+}
+#team .profiles-wrapper h3 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 25px;
+}
+#team .profiles-wrapper h4 {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 10px;
+}
+footer span {
+  display: block;
+  padding: 20px;
+  font-size: 1em;
+  color: #8F919B;
 }
