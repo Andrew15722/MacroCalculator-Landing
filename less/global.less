@@ -35,6 +35,12 @@ img {
 	height: auto;
 }
 
+br {
+	@media @mobile {
+		display: none;
+	}
+}
+
 #footer {
 	display: flex;
 	height: 5rem;
@@ -53,7 +59,11 @@ img {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
+
+	@media @mobile {
+		max-width: 500px;
+	}
 }

@@ -5,9 +5,18 @@
 	position: relative;
 	margin-top: 7rem;
 
+	@media @mobile {
+		height: auto;
+		margin-top: 4rem;
+	}
+
 	.about-h1-img {
 		left: 28rem;
 		position: absolute;
+
+		@media @mobile {
+			display: none;
+		}
 	}
 
 	.about-h1 {
@@ -20,6 +29,7 @@
 		margin-top: 2rem;
 		font-size: 1.5rem;
 		color: @color-about;
+		line-height: 1.8rem;
 	}
 
 	.col-container-1-of-3 {
@@ -29,9 +39,25 @@
 		justify-content: space-around;
 		margin-top: 8rem;
 
+		@media @mobile {
+			flex-direction: column;
+			margin: 2rem 0;
+		}
+
 		.about-col-1-of-3 {
 			text-align: center;
 			width: 25%;
+
+			@media @mobile {
+				margin: 4rem auto;
+				width: 80%;
+				height: auto;
+			}
+
+			.about-img {
+				@media @mobile {
+				}
+			}
 
 			.about-h2 {
 				font-size: 2rem;
@@ -42,6 +68,7 @@
 				font-size: 1.3rem;
 				color: @color-about;
 				margin-top: 1.5rem;
+				line-height: 1.7rem;
 
 				strong {
 					font-weight: bold;

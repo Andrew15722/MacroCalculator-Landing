@@ -4,36 +4,55 @@
 	font-family: 'Open Sans', sans-serif;
 	position: relative;
 
+	@media @mobile {
+		background: @color-primary;
+		width: 100%;
+	}
+
 	.landing-nav {
 		display: flex;
 		justify-content: flex-end;
 		margin-right: 10rem;
 		font-size: 1.6rem;
-	}
 
-	.logo {
-		margin: 4rem auto 4rem 8rem;
-		align-self: center;
-	}
+		@media @mobile {
+			width: 100%;
+			display: none;
+		}
 
-	.nav-a {
-		text-decoration: none;
-		margin-right: 1.7rem;
-		align-self: center;
-	}
+		.logo {
+			margin: 4rem auto 4rem 8rem;
+			align-self: center;
 
-	.nav-a:visited:not(:last-child) {
-		color: @color-primary;
-	}
+			@media @mobile {
+			}
+		}
 
-	.btn-sign {
-		.btn-blue();
+		.nav-a {
+			text-decoration: none;
+			margin-right: 1.7rem;
+			align-self: center;
+		}
+
+		.nav-a:visited:not(:last-child) {
+			color: @color-primary;
+		}
+
+		.btn-sign {
+			.btn-blue();
+		}
 	}
 
 	.landing-mission {
 		width: 50rem;
 		height: 25rem;
 		margin: 5rem 0 0 8rem;
+
+		@media @mobile {
+			margin: 0 0 0 0;
+			width: 80%;
+			text-align: center;
+		}
 
 		.landing-logo {
 			margin-bottom: 2.8rem;
@@ -49,6 +68,10 @@
 		.landing-btn {
 			.btn-white();
 			margin-top: 2.5rem;
+
+			@media @mobile {
+				display: none;
+			}
 		}
 	}
 
@@ -58,5 +81,9 @@
 		right: 8rem;
 		width: 45%;
 		height: 80%;
+
+		@media @mobile {
+			display: none;
+		}
 	}
 }

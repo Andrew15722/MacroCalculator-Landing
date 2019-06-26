@@ -5,9 +5,20 @@
   position: relative;
   margin-top: 7rem;
 }
+@media (max-width: 500px) {
+  .about {
+    height: auto;
+    margin-top: 4rem;
+  }
+}
 .about .about-h1-img {
   left: 28rem;
   position: absolute;
+}
+@media (max-width: 500px) {
+  .about .about-h1-img {
+    display: none;
+  }
 }
 .about .about-h1 {
   font-size: 3.5rem;
@@ -18,6 +29,7 @@
   margin-top: 2rem;
   font-size: 1.5rem;
   color: #bdbdbd;
+  line-height: 1.8rem;
 }
 .about .col-container-1-of-3 {
   width: 100%;
@@ -26,9 +38,22 @@
   justify-content: space-around;
   margin-top: 8rem;
 }
+@media (max-width: 500px) {
+  .about .col-container-1-of-3 {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+}
 .about .col-container-1-of-3 .about-col-1-of-3 {
   text-align: center;
   width: 25%;
+}
+@media (max-width: 500px) {
+  .about .col-container-1-of-3 .about-col-1-of-3 {
+    margin: 4rem auto;
+    width: 80%;
+    height: auto;
+  }
 }
 .about .col-container-1-of-3 .about-col-1-of-3 .about-h2 {
   font-size: 2rem;
@@ -38,6 +63,7 @@
   font-size: 1.3rem;
   color: #bdbdbd;
   margin-top: 1.5rem;
+  line-height: 1.7rem;
 }
 .about .col-container-1-of-3 .about-col-1-of-3 .about-col-p strong {
   font-weight: bold;
@@ -71,6 +97,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 500px) {
+  br {
+    display: none;
+  }
+}
 #footer {
   display: flex;
   height: 5rem;
@@ -86,9 +117,14 @@ img {
   color: #bdbdbd;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
 }
 html,
 body,
@@ -220,25 +256,37 @@ table {
   font-family: 'Open Sans', sans-serif;
   position: relative;
 }
+@media (max-width: 500px) {
+  .landing {
+    background: #488dfb;
+    width: 100%;
+  }
+}
 .landing .landing-nav {
   display: flex;
   justify-content: flex-end;
   margin-right: 10rem;
   font-size: 1.6rem;
 }
-.landing .logo {
+@media (max-width: 500px) {
+  .landing .landing-nav {
+    width: 100%;
+    display: none;
+  }
+}
+.landing .landing-nav .logo {
   margin: 4rem auto 4rem 8rem;
   align-self: center;
 }
-.landing .nav-a {
+.landing .landing-nav .nav-a {
   text-decoration: none;
   margin-right: 1.7rem;
   align-self: center;
 }
-.landing .nav-a:visited:not(:last-child) {
+.landing .landing-nav .nav-a:visited:not(:last-child) {
   color: #488dfb;
 }
-.landing .btn-sign {
+.landing .landing-nav .btn-sign {
   background: #488dfb;
   padding: 0.5rem 2.5rem;
   border-radius: 1.3rem;
@@ -251,6 +299,13 @@ table {
   width: 50rem;
   height: 25rem;
   margin: 5rem 0 0 8rem;
+}
+@media (max-width: 500px) {
+  .landing .landing-mission {
+    margin: 0 0 0 0;
+    width: 80%;
+    text-align: center;
+  }
 }
 .landing .landing-mission .landing-logo {
   margin-bottom: 2.8rem;
@@ -272,12 +327,22 @@ table {
   margin-top: 2rem;
   margin-top: 2.5rem;
 }
+@media (max-width: 500px) {
+  .landing .landing-mission .landing-btn {
+    display: none;
+  }
+}
 .landing .iphone-img {
   position: absolute;
   bottom: 0;
   right: 8rem;
   width: 45%;
   height: 80%;
+}
+@media (max-width: 500px) {
+  .landing .iphone-img {
+    display: none;
+  }
 }
 .team {
   background: #488dfb;
