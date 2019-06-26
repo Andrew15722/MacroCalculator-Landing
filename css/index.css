@@ -282,8 +282,8 @@ table {
 .landing .landing-nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 10rem;
-  font-size: 1.6rem;
+  margin-right: 5%;
+  font-size: 1.3rem;
 }
 @media (max-width: 500px) {
   .landing .landing-nav {
@@ -308,7 +308,7 @@ table {
   padding: 0.5rem 2.5rem;
   border-radius: 1.3rem;
   color: #ededed;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -448,11 +448,11 @@ table {
 }
 .team .col-container-1-of-6 .team-img {
   width: 11rem;
-  height: 13rem;
+  height: 12rem;
   background: lightcoral;
   margin: 0 auto;
   border-radius: 50%;
-  border: 4px solid #ededed;
+  border: 3.5px solid #ededed;
   margin-bottom: 1rem;
 }
 .team .col-container-1-of-6 .team-h2 {
