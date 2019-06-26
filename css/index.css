@@ -9,6 +9,7 @@
   .about {
     height: auto;
     margin-top: 4rem;
+    width: 100%;
   }
 }
 .about .about-h1-img {
@@ -51,7 +52,7 @@
 @media (max-width: 500px) {
   .about .col-container-1-of-3 .about-col-1-of-3 {
     margin: 4rem auto;
-    width: 80%;
+    width: 85%;
     height: auto;
   }
 }
@@ -108,13 +109,28 @@ img {
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #footer {
+    justify-content: center;
+  }
+}
 #footer img {
   width: 9%;
   margin-right: 85rem;
 }
+@media (max-width: 500px) {
+  #footer img {
+    display: none;
+  }
+}
 #footer p {
   margin-right: 5rem;
   color: #bdbdbd;
+}
+@media (max-width: 500px) {
+  #footer p {
+    margin: 0;
+  }
 }
 .container {
   max-width: 1000px;
@@ -255,6 +271,7 @@ table {
   height: 100vh;
   font-family: 'Open Sans', sans-serif;
   position: relative;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .landing {
@@ -303,18 +320,28 @@ table {
 @media (max-width: 500px) {
   .landing .landing-mission {
     margin: 0 0 0 0;
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
 }
 .landing .landing-mission .landing-logo {
   margin-bottom: 2.8rem;
 }
+@media (max-width: 500px) {
+  .landing .landing-mission .landing-logo {
+    margin: 7rem 0 2rem;
+  }
+}
 .landing .landing-mission .landing-p {
   color: #ededed;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .landing .landing-mission .landing-p {
+    font-size: 1.6rem;
+  }
 }
 .landing .landing-mission .landing-btn {
   background: #ededed;
@@ -344,6 +371,22 @@ table {
     display: none;
   }
 }
+.landing .mobile-iphone-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  .landing .mobile-iphone-img {
+    background: url(/images/mobile-landing.png);
+    background-size: cover;
+    display: inline-block;
+    height: 30rem;
+    width: 15rem;
+    right: 0;
+    bottom: -7rem;
+    position: absolute;
+    transform: rotate(40deg);
+  }
+}
 .team {
   background: #488dfb;
   height: 60rem;
@@ -355,8 +398,19 @@ table {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+@media (max-width: 500px) {
+  .team {
+    height: auto;
+    padding: 0;
+  }
+}
 .team .team-meet {
   flex-basis: 100%;
+}
+@media (max-width: 500px) {
+  .team .team-meet {
+    margin: 5rem 0 2rem;
+  }
 }
 .team .team-meet .team-h1 {
   font-size: 3.5rem;
@@ -376,9 +430,21 @@ table {
   justify-content: space-around;
   color: #ededed;
 }
+@media (max-width: 500px) {
+  .team .col-container-1-of-6 {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
 .team .col-container-1-of-6 .team-col-1-of-6 {
   width: 33%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .team .col-container-1-of-6 .team-col-1-of-6 {
+    width: 100%;
+    margin: 2rem 0 2rem;
+  }
 }
 .team .col-container-1-of-6 .team-img {
   width: 11rem;

@@ -3,6 +3,7 @@
 	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
 	position: relative;
+	overflow: hidden;
 
 	@media @mobile {
 		background: @color-primary;
@@ -50,12 +51,16 @@
 
 		@media @mobile {
 			margin: 0 0 0 0;
-			width: 80%;
+			width: 100%;
 			text-align: center;
 		}
 
 		.landing-logo {
 			margin-bottom: 2.8rem;
+
+			@media @mobile {
+				margin: 7rem 0 2rem;
+			}
 		}
 
 		.landing-p {
@@ -63,6 +68,10 @@
 			font-size: 1.8rem;
 			font-weight: 400;
 			line-height: 2rem;
+
+			@media @mobile {
+				font-size: 1.6rem;
+			}
 		}
 
 		.landing-btn {
@@ -84,6 +93,22 @@
 
 		@media @mobile {
 			display: none;
+		}
+	}
+
+	.mobile-iphone-img {
+		display: none;
+
+		@media @mobile {
+			background: url(/images/mobile-landing.png);
+			background-size: cover;
+			display: inline-block;
+			height: 30rem;
+			width: 15rem;
+			right: 0;
+			bottom: -7rem;
+			position: absolute;
+			transform: rotate(40deg);
 		}
 	}
 }

@@ -47,14 +47,26 @@ br {
 	justify-content: flex-end;
 	align-items: center;
 
+	@media @mobile {
+		justify-content: center;
+	}
+
 	img {
 		width: 9%;
 		margin-right: 85rem;
+
+		@media @mobile {
+			display: none;
+		}
 	}
 
 	p {
 		margin-right: 5rem;
 		color: @color-about;
+
+		@media @mobile {
+			margin: 0;
+		}
 	}
 }
 
