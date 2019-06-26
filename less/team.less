@@ -1,0 +1,95 @@
+.team {
+	background: @color-primary;
+	height: 60rem;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 5rem;
+
+	.team-meet {
+		flex-basis: 100%;
+
+		.team-h1 {
+			font-size: 3.5rem;
+			color: @color-secondary;
+			text-align: center;
+		}
+
+		.team-p {
+			margin-top: 2rem;
+			font-size: 1.5rem;
+			color: @color-secondary;
+			text-align: center;
+		}
+	}
+
+	.col-container-1-of-6 {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		color: @color-secondary;
+
+		.team-col-1-of-6 {
+			width: 33%;
+			text-align: center;
+		}
+
+		.team-img {
+			width: 11rem;
+			height: 13rem;
+			background: lightcoral;
+			margin: 0 auto;
+			border-radius: 50%;
+			border: 4px solid @color-secondary;
+			margin-bottom: 1rem;
+		}
+
+		.team-h2 {
+			font-size: 1.8rem;
+			margin-bottom: .5rem;
+		}
+
+		.team-col-p2 {
+			font-weight: 300;
+		}
+
+		.team-1 {
+			background-image: url(/images/kat.png);
+			background-size: cover;
+			background-position: left;
+		}
+
+		.team-2 {
+			background-image: url(/images/Luqmaan.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.team-3 {
+			background-image: url(/images/Andrew.png);
+			background-size: cover;
+			background-position: right;
+		}
+
+		.team-4 {
+			background-image: url(/images/Brandon.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.team-5 {
+			background-image: url(/images/Krisli.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.team-6 {
+			background-image: url(/images/Zach.png);
+			background-size: cover;
+			background-position: center;
+		}
+	}
+}

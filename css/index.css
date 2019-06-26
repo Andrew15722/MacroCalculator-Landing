@@ -1,5 +1,5 @@
 .about {
-  height: 43rem;
+  height: 48rem;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   position: relative;
@@ -19,27 +19,27 @@
   font-size: 1.5rem;
   color: #bdbdbd;
 }
-.about .col-container {
+.about .col-container-1-of-3 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-around;
   margin-top: 8rem;
 }
-.about .col-container .about-col-1-of-3 {
+.about .col-container-1-of-3 .about-col-1-of-3 {
   text-align: center;
   width: 25%;
 }
-.about .col-container .about-col-1-of-3 .about-h2 {
+.about .col-container-1-of-3 .about-col-1-of-3 .about-h2 {
   font-size: 2rem;
   margin-top: 2rem;
 }
-.about .col-container .about-col-1-of-3 .about-col-p {
+.about .col-container-1-of-3 .about-col-1-of-3 .about-col-p {
   font-size: 1.3rem;
   color: #bdbdbd;
   margin-top: 1.5rem;
 }
-.about .col-container .about-col-1-of-3 .about-col-p strong {
+.about .col-container-1-of-3 .about-col-1-of-3 .about-col-p strong {
   font-weight: bold;
 }
 * {
@@ -264,4 +264,85 @@ table {
   right: 8rem;
   width: 45%;
   height: 80%;
+}
+.team {
+  background: #2b59ce;
+  height: 60rem;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.team .team-meet {
+  flex-basis: 100%;
+}
+.team .team-meet .team-h1 {
+  font-size: 3.5rem;
+  color: #ededed;
+  text-align: center;
+}
+.team .team-meet .team-p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #ededed;
+  text-align: center;
+}
+.team .col-container-1-of-6 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #ededed;
+}
+.team .col-container-1-of-6 .team-col-1-of-6 {
+  width: 33%;
+  text-align: center;
+}
+.team .col-container-1-of-6 .team-img {
+  width: 11rem;
+  height: 13rem;
+  background: lightcoral;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid #ededed;
+  margin-bottom: 1rem;
+}
+.team .col-container-1-of-6 .team-h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.team .col-container-1-of-6 .team-col-p2 {
+  font-weight: 300;
+}
+.team .col-container-1-of-6 .team-1 {
+  background-image: url(/images/kat.png);
+  background-size: cover;
+  background-position: left;
+}
+.team .col-container-1-of-6 .team-2 {
+  background-image: url(/images/Luqmaan.png);
+  background-size: cover;
+  background-position: center;
+}
+.team .col-container-1-of-6 .team-3 {
+  background-image: url(/images/Andrew.png);
+  background-size: cover;
+  background-position: right;
+}
+.team .col-container-1-of-6 .team-4 {
+  background-image: url(/images/Brandon.png);
+  background-size: cover;
+  background-position: center;
+}
+.team .col-container-1-of-6 .team-5 {
+  background-image: url(/images/Krisli.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.team .col-container-1-of-6 .team-6 {
+  background-image: url(/images/Zach.png);
+  background-size: cover;
+  background-position: center;
 }
