@@ -463,32 +463,32 @@ table {
   font-weight: 300;
 }
 .team .col-container-1-of-6 .team-1 {
-  background-image: url(/images/kat.png);
+  background-image: url(../images/kat.png);
   background-size: cover;
   background-position: left;
 }
 .team .col-container-1-of-6 .team-2 {
-  background-image: url(/images/Luqmaan.png);
+  background-image: url(../images/Luqmaan.png);
   background-size: cover;
   background-position: center;
 }
 .team .col-container-1-of-6 .team-3 {
-  background-image: url(/images/Andrew.png);
+  background-image: url(../images/Andrew.png);
   background-size: cover;
   background-position: right;
 }
 .team .col-container-1-of-6 .team-4 {
-  background-image: url(/images/Brandon.png);
+  background-image: url(../images/Brandon.png);
   background-size: cover;
   background-position: center;
 }
 .team .col-container-1-of-6 .team-5 {
-  background-image: url(/images/Krisli.jpg);
+  background-image: url(../images/Krisli.jpg);
   background-size: cover;
   background-position: center;
 }
 .team .col-container-1-of-6 .team-6 {
-  background-image: url(/images/Zach.png);
+  background-image: url(../images/Zach.png);
   background-size: cover;
   background-position: center;
 }
