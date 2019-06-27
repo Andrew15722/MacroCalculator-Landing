@@ -273,6 +273,11 @@ table {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 800px) {
+  .landing {
+    background: linear-gradient(90deg, #488dfb 55%, #ededed 55%);
+  }
+}
 @media (max-width: 500px) {
   .landing {
     background: #488dfb;
@@ -282,8 +287,8 @@ table {
 .landing .landing-nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 5%;
   font-size: 1.3rem;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .landing .landing-nav {
@@ -295,11 +300,22 @@ table {
   margin: 4rem auto 4rem 8rem;
   align-self: center;
 }
+@media (max-width: 800px) {
+  .landing .landing-nav .logo {
+    margin: 4rem 8rem 4rem 0;
+  }
+}
 .landing .landing-nav .nav-a {
   text-decoration: none;
   margin-right: 1.7rem;
   align-self: center;
   color: #488dfb;
+}
+@media (max-width: 800px) {
+  .landing .landing-nav .nav-a {
+    margin-right: 0.2rem;
+    transform: scale(0.8);
+  }
 }
 .landing .landing-nav .nav-a:visited:not(:last-child) {
   color: #488dfb;
@@ -312,11 +328,25 @@ table {
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  margin-right: 8%;
+}
+@media (max-width: 800px) {
+  .landing .landing-nav .btn-sign {
+    margin-right: -0.3rem;
+  }
 }
 .landing .landing-mission {
-  width: 50rem;
-  height: 25rem;
+  width: 39%;
+  height: auto;
   margin: 5rem 0 0 8rem;
+}
+@media (max-width: 800px) {
+  .landing .landing-mission {
+    transform: scale(0.7);
+    margin: 5rem 0 0 -0.6rem;
+    text-align: center;
+    width: 60%;
+  }
 }
 @media (max-width: 500px) {
   .landing .landing-mission {
@@ -363,9 +393,17 @@ table {
 .landing .iphone-img {
   position: absolute;
   bottom: 0;
-  right: 8rem;
+  right: 4rem;
   width: 45%;
   height: 80%;
+}
+@media (max-width: 800px) {
+  .landing .iphone-img {
+    width: 55%;
+    height: 55%;
+    bottom: 0;
+    right: 2rem;
+  }
 }
 @media (max-width: 500px) {
   .landing .iphone-img {

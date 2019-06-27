@@ -5,6 +5,10 @@
 	position: relative;
 	overflow: hidden;
 
+	@media @tablet {
+		background: linear-gradient(90deg, @color-primary 55%, @color-secondary 55%);
+	}
+
 	@media @mobile {
 		background: @color-primary;
 		width: 100%;
@@ -13,8 +17,8 @@
 	.landing-nav {
 		display: flex;
 		justify-content: flex-end;
-		margin-right: 5%;
 		font-size: 1.3rem;
+		width: 100%;
 
 		@media @mobile {
 			width: 100%;
@@ -25,6 +29,10 @@
 			margin: 4rem auto 4rem 8rem;
 			align-self: center;
 
+			@media @tablet {
+				margin: 4rem 8rem 4rem 0;
+			}
+
 			@media @mobile {
 			}
 		}
@@ -34,6 +42,11 @@
 			margin-right: 1.7rem;
 			align-self: center;
 			color: @color-primary;
+
+			@media @tablet {
+				margin-right: .2rem;
+				transform: scale(.8);
+			}
 		}
 
 		.nav-a:visited:not(:last-child) {
@@ -42,13 +55,25 @@
 
 		.btn-sign {
 			.btn-blue();
+			margin-right: 8%;
+
+			@media @tablet {
+				margin-right: -.3rem;
+			}
 		}
 	}
 
 	.landing-mission {
-		width: 50rem;
-		height: 25rem;
+		width: 39%;
+		height: auto;
 		margin: 5rem 0 0 8rem;
+
+		@media @tablet {
+			transform: scale(.7);
+			margin: 5rem 0 0 -.6rem;
+			text-align: center;
+			width: 60%;
+		}
 
 		@media @mobile {
 			margin: 0 0 0 0;
@@ -88,9 +113,16 @@
 	.iphone-img {
 		position: absolute;
 		bottom: 0;
-		right: 8rem;
+		right: 4rem;
 		width: 45%;
 		height: 80%;
+
+		@media @tablet {
+			width: 55%;
+			height: 55%;
+			bottom: 0;
+			right: 2rem;
+		}
 
 		@media @mobile {
 			display: none;
