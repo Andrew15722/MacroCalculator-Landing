@@ -5,48 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">    
     <title>Macro Meter</title>
 </head>
 <body>
 
-    <div class="container">
+    <section id="landing" class="landing">
 
-        <header>
-            <nav class="header-nav">
-                <img src="images/menu-logo.svg" alt="Page logo" class="logo">
-                <a href="#" class="nav-a">Home</a>
-                <a href="#" class="nav-a">About</a>
-                <a href="#" class="nav-a">Team</a>
-                <a href="#" class="nav-a btn sign">Sign in</a>
-            </nav>
-        </header>
-        
-        <section class="top">
-            <div class="top-container">
-                <img src="/images/landing-logo.svg" alt="landing page logo" class="top-img"> 
-                <p class="top-p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Animi officiis, soluta quaerat debitis facere laudantium veniam<br> nobis itaque 
-                    perferendis praesentium et sapiente <br>explicabo numquam nam atque ipsa veritatis at facilis.
-                </p>
-                <a href="#" class="top-btn">Download</a>
-                
-                <div class="dot-1"></div>
-                <div class="dot-2"></div>
-                <div class="dot-3"></div>
-                <div class="dot-4"></div>
-                <div class="dot-5"></div>
+        <nav class="landing-nav">
+            <img src="images/menu-logo.svg" alt="Page logo" class="logo">
+            <a href="#landing" class="nav-a">Home</a>
+            <a href="#about" class="nav-a">About</a>
+            <a href="#team" class="nav-a">Team</a>
+            <a href="#" class="nav-a btn-sign">Sign in</a>
+        </nav>
 
-                <div class="square-1"></div>
-                <div class="square-2"></div>
-                <div class="square-3"></div>
-                <div class="square-4"></div>
-                <div class="square-5"></div>
-                <div class="square-6"></div>
-                
-            </div>
-        </section>
+        <div class="landing-mission">
+            <img class="landing-logo" src="images/landing-logo.svg" alt="landing logo">
+            <p class="landing-p">
+                Macrometer Puts an end to fad diets. Instead, we use scientific formulas tailored to each individual to deliver you a diet guaranteed to help you reach your fitness and nutrition goals.
+            </p>
+            <button class="landing-btn">Download</button>
+        </div>
+
+        <img class="iphone-img" src="images/landing-iphone-render.png" alt="image of iphones side by side.">
+        <div class="mobile-iphone-img" alt="image of iphone"> </div>
     
-    </div>    
+    </section>
+
+    <section class="about" id="about">
+        <img class="about-h1-img" src="images/macro-about-icon.svg" alt="macro about icon">
+        <h1 class="about-h1">The Everyday Macro Tracker</h1>
+        <p class="about-p">
+            Macrometer is an easy to use tool that allows you to look after your eating habits in a healthy way.
+            <br>It's personal nutrition that lets you be your own coach and achieve your goals as you see fit.
+        </p>
+
+        <div class="col-container-1-of-3">
+            <div class="about-col-1-of-3">
+                <img class="about-img" src="images/meal-calc-icon.svg" alt="meal icon">
+                <h2 class="about-h2">Meal Calculator</h2>
+                <p class="about-col-p">Macrometer accounts for all lifestyles and allows you to choose a meal plan that works best for you.</p>
+            </div>
+            <div class="about-col-1-of-3">
+                <img class="about-img" src="images/personalized-nutrition-icon.svg" alt=" nutrition icon">
+                <h2 class="about-h2">Personalized Nutrition</h2>
+                <p class="about-col-p">Calculate Macronutrients specific to your body type and activity level. <br><strong>Specific to you!</strong></p>
+            </div>
+            <div class="about-col-1-of-3">
+                <img class="about-img" src="images/dynamic-icon.svg" alt="dynamic icon">
+                <h2 class="about-h2">Dynamic Adjustments</h2>
+                <p class="about-col-p">Over time diet and fitness goals change, and macrometer allows you to adjust your metrics along the way</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="team-meet">
+            <h1 class="team-h1">Meet our Team</h1>
+            <p class="team-p">
+                We have a dedicated team of talented individuals who are working at the intersection of fitness and technology 
+                to provide such a tool to you at no cost.
+            </p>
+        </div>
+            
+
+        <div class="col-container-1-of-6">
+            <div class="team-col-1-of-6">
+                <div class="team-img team-1"></div>
+                <h2 class="team-h2">Kat Milton</h2>
+                <p class="team-col-p">IOS Developer</p>
+            </div>
+            <div class="team-col-1-of-6">
+                <div class="team-img team-2"></div>
+                <h2 class="team-h2">Luqmaan Khan</h2>
+                <p class="team-col-p">IOS Developer</p>
+            </div>
+            <div class="team-col-1-of-6">
+                <div class="team-img team-3"></div>
+                <h2 class="team-h2">Andrew Mendez</h2>
+                <p class="team-col-p">UI Developer</p>
+            </div>
+            <div class="team-col-1-of-6">
+                <div class="team-img team-4"></div>
+                <h2 class="team-h2">Brandon Desselle</h2>
+                <p class="team-col-p">Front End Developer</p>
+            </div>
+            <div class="team-col-1-of-6">
+                <div class="team-img team-5"></div>
+                <h2 class="team-h2">Krisli Dimo</h2>
+                <p class="team-col-p">Back End Developer</p>
+            </div>
+            <div class="team-col-1-of-6">
+                <div class="team-img team-6"></div>
+                <h2 class="team-h2">Zach Young</h2>
+                <p class="team-col-p">UI Designer/Developer</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <img src="images/footer-logo.svg" alt="Foooter logo ">
+        <p>Copyright Macrometer 2019</p>
+    </footer>
+
+
 </body>
 </html>

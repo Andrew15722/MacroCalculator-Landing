@@ -6,17 +6,8 @@ html {
 	font-size: 62.5%;
 }
 
-html,
 body {
-	// font family here
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-	// font family here
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -44,8 +35,47 @@ img {
 	height: auto;
 }
 
+br {
+	@media @mobile {
+		display: none;
+	}
+}
+
+#footer {
+	display: flex;
+	height: 5rem;
+	justify-content: flex-end;
+	align-items: center;
+
+	@media @mobile {
+		justify-content: center;
+	}
+
+	img {
+		width: 9%;
+		margin-right: 85rem;
+
+		@media @mobile {
+			display: none;
+		}
+	}
+
+	p {
+		margin-right: 5rem;
+		color: @color-about;
+
+		@media @mobile {
+			margin: 0;
+		}
+	}
+}
+
 .container {
-	max-width: 1400px;
+	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
+
+	@media @mobile {
+		max-width: 500px;
+	}
 }

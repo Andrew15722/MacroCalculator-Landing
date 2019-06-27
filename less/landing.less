@@ -1,0 +1,147 @@
+.landing {
+	background: linear-gradient(90deg, @color-primary 60%, @color-secondary 60%);
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	overflow: hidden;
+
+	@media @tablet {
+		background: linear-gradient(90deg, @color-primary 55%, @color-secondary 55%);
+	}
+
+	@media @mobile {
+		background: @color-primary;
+		width: 100%;
+	}
+
+	.landing-nav {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 1.3rem;
+		width: 100%;
+
+		@media @mobile {
+			width: 100%;
+			display: none;
+		}
+
+		.logo {
+			margin: 4rem auto 4rem 8rem;
+			align-self: center;
+
+			@media @tablet {
+				margin: 4rem 8rem 4rem 0;
+			}
+
+			@media @mobile {
+			}
+		}
+
+		.nav-a {
+			text-decoration: none;
+			margin-right: 1.7rem;
+			align-self: center;
+			color: @color-primary;
+
+			@media @tablet {
+				margin-right: .2rem;
+				transform: scale(.8);
+			}
+		}
+
+		.nav-a:visited:not(:last-child) {
+			color: @color-primary;
+		}
+
+		.btn-sign {
+			.btn-blue();
+			margin-right: 8%;
+
+			@media @tablet {
+				margin-right: -.3rem;
+			}
+		}
+	}
+
+	.landing-mission {
+		width: 39%;
+		height: auto;
+		margin: 5rem 0 0 8rem;
+
+		@media @tablet {
+			transform: scale(.7);
+			margin: 5rem 0 0 -.6rem;
+			text-align: center;
+			width: 60%;
+		}
+
+		@media @mobile {
+			margin: 0 0 0 0;
+			width: 100%;
+			text-align: center;
+		}
+
+		.landing-logo {
+			margin-bottom: 2.8rem;
+
+			@media @mobile {
+				margin: 7rem 0 2rem;
+			}
+		}
+
+		.landing-p {
+			color: @color-secondary;
+			font-size: 1.8rem;
+			font-weight: 400;
+			line-height: 2rem;
+
+			@media @mobile {
+				font-size: 1.6rem;
+			}
+		}
+
+		.landing-btn {
+			.btn-white();
+			margin-top: 2.5rem;
+
+			@media @mobile {
+				display: none;
+			}
+		}
+	}
+
+	.iphone-img {
+		position: absolute;
+		bottom: 0;
+		right: 4rem;
+		width: 45%;
+		height: 80%;
+
+		@media @tablet {
+			width: 55%;
+			height: 55%;
+			bottom: 0;
+			right: 2rem;
+		}
+
+		@media @mobile {
+			display: none;
+		}
+	}
+
+	.mobile-iphone-img {
+		display: none;
+
+		@media @mobile {
+			background: url(/images/mobile-landing.png);
+			background-size: cover;
+			display: inline-block;
+			height: 30rem;
+			width: 15rem;
+			right: 0;
+			bottom: -7rem;
+			position: absolute;
+			transform: rotate(40deg);
+		}
+	}
+}
